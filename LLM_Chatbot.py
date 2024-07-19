@@ -31,7 +31,7 @@ def generate_response(input_text, chat_history_ids):
             max_length=1000, 
             pad_token_id=tokenizer.eos_token_id,
             do_sample=True,   
-            temperature=0.7,  
+            temperature=0.2,  
             top_k=50,         
             top_p=0.95        
         )
@@ -54,6 +54,7 @@ def chat():
 
 if __name__ == "__main__":
     chat()
+
 
 
 
